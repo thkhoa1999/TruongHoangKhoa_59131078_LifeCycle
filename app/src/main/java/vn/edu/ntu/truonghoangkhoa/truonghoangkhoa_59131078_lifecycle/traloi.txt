@@ -1,0 +1,45 @@
+			Câu 4
+Thứ tự vòng đời:
+- Ứng dụng khởi động và chạy:
+
+1. onCreat Called
+2. onStart Called
+3. onResume Called
+
+-Bấm nút Back:
+
+4. onPause Called
+5. onStop Called
+6. onDestroy Called
+
+-Mở lại ứng dụng:
+
+7. onCreat Called
+8. onStart Called
+9. onResume Called
+
+			Câu 5:
+Thứ tự vòng đời:
+- Ứng dụng khởi động và chạy:
+
+1. onCreat Called
+2. onStart Called
+3. onResume Called
+
+-Bấm nút Home:
+
+4. onPause Called
+5. onStop Called
+
+-Mở lại ứng dụng:
+
+6. onRestart Called
+7. onStart Called
+8. onResume Called
+
+			Câu 6:
+Có thể thực hiện trên phương thức vòng đời onPause và onStop( ưu tiên dùng onStop hơn) vì:
+-Dữ liệu khi đang ở trang thái onPause và onStop sẽ được lưu lại khi chuyển sang activity khác. Nhưng onPause đến khá nhanh nên dữ liệu càng nặng sẽ dễ bị mất còn onStop được gọi khi Ativity không nhìn thấy nữa, nên ta có thể tận dụng điều này để lưu trữ ở
+vòng đời onStop.
+
+
